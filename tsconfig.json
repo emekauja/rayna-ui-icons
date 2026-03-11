@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": [
+    "src",
+    "core/src",
+    "react/src",
+    "react-native/src",
+    "vue/src",
+    "theme/src",
+    "homepage/src",
+    "homepage/vite.config.ts",
+    "tsup.config.ts",
+    "vitest.config.ts"
+  ]
+}
