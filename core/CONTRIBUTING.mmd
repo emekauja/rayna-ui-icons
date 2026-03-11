@@ -1,0 +1,11 @@
+flowchart LR
+  A[core/assets/linear + core/assets/bold] --> B[normalize filenames]
+  B --> C[build typed catalog]
+  C --> D[core/src/catalog.generated.ts]
+  C --> E[react/src/generated.tsx]
+  C --> F[react-native/src/generated.tsx]
+  C --> G[vue/src/generated.ts]
+  D --> H[homepage search and snippets]
+  E --> I[raynaui-icons/react]
+  F --> J[raynaui-icons/react-native]
+  G --> K[raynaui-icons/vue]

@@ -1,0 +1,8 @@
+{
+  "name": "@raynaui/icons-core",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node ./scripts/generate-icons.mjs"
+  }
+}
