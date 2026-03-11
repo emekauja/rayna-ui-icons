@@ -1,11 +1,11 @@
 # Rayna UI Icons
 
-`rayna-ui-icons` is a TypeScript icon library for React, React Native, and Vue, built from the Rayna UI icon set.
+`@raynaui/icons` is a TypeScript icon library for React, React Native, and Vue, built from the Rayna UI icon set.
 
 ## Install
 
 ```bash
-pnpm add rayna-ui-icons
+pnpm add @raynaui/icons
 ```
 
 Framework peer dependencies:
@@ -19,7 +19,7 @@ Framework peer dependencies:
 ### React
 
 ```tsx
-import { Search } from "rayna-ui-icons/react";
+import { Search } from "@raynaui/icons/react";
 
 export function Demo() {
   return <Search size={24} color="#ff6b35" variant="bold" />;
@@ -29,7 +29,7 @@ export function Demo() {
 ### React Native
 
 ```tsx
-import { Search } from "rayna-ui-icons/react-native";
+import { Search } from "@raynaui/icons/react-native";
 
 export function Demo() {
   return <Search size={24} color="#ff6b35" variant="linear" />;
@@ -40,7 +40,7 @@ export function Demo() {
 
 ```vue
 <script setup lang="ts">
-import { Search } from "rayna-ui-icons/vue";
+import { Search } from "@raynaui/icons/vue";
 </script>
 
 <template>
@@ -61,9 +61,9 @@ Platform-specific SVG props are also passed through.
 
 ## Package Entry Points
 
-- `rayna-ui-icons/react`
-- `rayna-ui-icons/react-native`
-- `rayna-ui-icons/vue`
+- `@raynaui/icons/react`
+- `@raynaui/icons/react-native`
+- `@raynaui/icons/vue`
 
 ## Development
 
