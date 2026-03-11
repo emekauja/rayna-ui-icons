@@ -67,7 +67,7 @@ vi.mock("@raynaui/icons-core", () => ({
   ],
 }));
 
-vi.mock("@emekauja/raynaui-icons-react", () => {
+vi.mock("@emekauja/raynaui-icons/react", () => {
   const makeIcon = (name: string) => (props: Record<string, unknown>) =>
     React.createElement("svg", { "data-testid": name, ...props });
 
@@ -101,7 +101,7 @@ describe("homepage app", () => {
     fireEvent.click(screen.getByRole("tab", { name: "Vue" }));
 
     expect(
-      screen.getAllByText("pnpm add @emekauja/raynaui-icons-vue vue").length
+      screen.getAllByText("pnpm add @emekauja/raynaui-icons vue").length
     ).toBeGreaterThan(0);
   });
 });
