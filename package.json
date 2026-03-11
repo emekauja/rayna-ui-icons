@@ -1,8 +1,16 @@
 {
-  "name": "raynaui-icons",
+  "name": "rayna-icons",
   "version": "0.1.0",
   "description": "Rayna UI icon library for React, React Native, and Vue.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emekauja/rayna-ui-icons.git"
+  },
+  "homepage": "https://github.com/emekauja/rayna-ui-icons",
+  "bugs": {
+    "url": "https://github.com/emekauja/rayna-ui-icons/issues"
+  },
   "type": "module",
   "sideEffects": false,
   "files": [
@@ -11,6 +19,11 @@
     "LICENSE"
   ],
   "keywords": [
+    "raynaui-icons",
+    "rayna-icons",
+    "rayna", 
+    "rayna-ui-icons",
+    "raynaicons",
     "rayna-ui",
     "icons",
     "icon-library",
