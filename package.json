@@ -67,7 +67,7 @@
     "generate": "node ./core/scripts/generate-icons.mjs",
     "build": "node ./core/scripts/generate-icons.mjs && tsup",
     "build:package": "tsup",
-    "build:homepage": "npm --prefix homepage run build",
+    "build:homepage": "node ./core/scripts/generate-icons.mjs && npm --prefix homepage run build",
     "dev": "npm --prefix homepage run dev",
     "test": "vitest run",
     "lint": "tsc --noEmit -p tsconfig.json"

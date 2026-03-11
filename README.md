@@ -74,6 +74,14 @@ corepack pnpm test
 corepack pnpm lint
 ```
 
+## Homepage
+
+The docs site is configured for GitHub Pages and deploys from
+`.github/workflows/deploy-homepage.yml` on pushes to `main`.
+
+- Repo Pages URL: `https://emekauja.github.io/rayna-ui-icons/`
+- In GitHub repository settings, set Pages source to `GitHub Actions`
+
 If your shell does not load Node automatically, initialize `nvm` first:
 
 ```zsh
