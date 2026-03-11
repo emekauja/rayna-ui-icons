@@ -2,15 +2,15 @@ import type { ComponentType } from "react";
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
 
 import { iconCatalog, type IconCatalogEntry, type IconVariant } from "@raynaui/icons-core";
-import * as Icons from "rayna-icons/react";
+import * as Icons from "rayna-ui-icons/react";
 
 type Framework = "react" | "react-native" | "vue";
 type IconComponent = ComponentType<Record<string, unknown>>;
 
 const frameworkInstallMap: Record<Framework, string> = {
-  react: "pnpm add rayna-icons react react-dom",
-  "react-native": "pnpm add rayna-icons react-native-svg",
-  vue: "pnpm add rayna-icons vue",
+  react: "pnpm add rayna-ui-icons react react-dom",
+  "react-native": "pnpm add rayna-ui-icons react-native-svg",
+  vue: "pnpm add rayna-ui-icons vue",
 };
 
 const frameworkTitleMap: Record<Framework, string> = {
@@ -36,13 +36,13 @@ function makeSvgMarkup(icon: IconCatalogEntry, variant: IconVariant) {
 
 function makeUsageSnippet(name: string, framework: Framework, variant: IconVariant) {
   if (framework === "vue") {
-    return `<script setup lang="ts">\nimport { ${name} } from "rayna-icons/vue";\n</script>\n\n<template>\n  <${name} :size=\"32\" color=\"#ff6b35\" variant=\"${variant}\" />\n</template>`;
+    return `<script setup lang="ts">\nimport { ${name} } from "rayna-ui-icons/vue";\n</script>\n\n<template>\n  <${name} :size=\"32\" color=\"#ff6b35\" variant=\"${variant}\" />\n</template>`;
   }
 
   const source =
     framework === "react"
-      ? "rayna-icons/react"
-      : "rayna-icons/react-native";
+      ? "rayna-ui-icons/react"
+      : "rayna-ui-icons/react-native";
 
   return `import { ${name} } from "${source}";\n\nexport function Example() {\n  return <${name} size={32} color="#ff6b35" variant="${variant}" />;\n}`;
 }
@@ -244,7 +244,7 @@ export function App() {
           <div className="install-grid">
             <article className="install-card">
               <span className="card-label">Package</span>
-              <h3>{`rayna-icons/${framework}`}</h3>
+              <h3>{`rayna-ui-icons/${framework}`}</h3>
               <code>{installCommand}</code>
             </article>
             <FeatureCard

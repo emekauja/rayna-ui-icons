@@ -15,19 +15,19 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "rayna-icons/react": path.resolve(
+      "rayna-ui-icons/react": path.resolve(
         __dirname,
         "react/src/index.ts"
       ),
-      "rayna-icons/react-native": path.resolve(
+      "rayna-ui-icons/react-native": path.resolve(
         __dirname,
         "react-native/src/index.ts"
       ),
-      "rayna-icons/vue": path.resolve(
+      "rayna-ui-icons/vue": path.resolve(
         __dirname,
         "vue/src/index.ts"
       ),
-      "rayna-icons": path.resolve(__dirname, "src/index.ts"),
+      "rayna-ui-icons": path.resolve(__dirname, "src/index.ts"),
       "@raynaui/icons-core": path.resolve(__dirname, "core/src/index.ts"),
       "@raynaui/icons-theme": path.resolve(__dirname, "theme/src/index.ts"),
     },
