@@ -16,10 +16,10 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "@raynaui/icons": ["./src/index.ts"],
-      "@raynaui/icons/react": ["./react/src/index.ts"],
-      "@raynaui/icons/vue": ["./vue/src/index.ts"],
-      "@raynaui/icons/react-native": ["./react-native/src/index.ts"],
+      "@emekauja/raynaui-icons": ["./src/index.ts"],
+      "@emekauja/raynaui-icons/react": ["./react/src/index.ts"],
+      "@emekauja/raynaui-icons/vue": ["./vue/src/index.ts"],
+      "@emekauja/raynaui-icons/react-native": ["./react-native/src/index.ts"],
       "@raynaui/icons-core": ["./core/src/index.ts"],
       "@raynaui/icons-theme": ["./theme/src/index.ts"]
     }
